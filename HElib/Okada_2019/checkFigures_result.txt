@@ -1,0 +1,126 @@
+0 / 1 = 0
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2554.760000[ms]
+0 / 2 = 0
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2554.018000[ms]
+0 / 3 = 0
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2546.272000[ms]
+0 / 4 = 0
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2588.713000[ms]
+0 / 5 = 0
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2586.170000[ms]
+0 / 6 = 0
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2550.962000[ms]
+1 / 1 = 1
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[1],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2543.491000[ms]
+1 / 2 = 0
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2549.352000[ms]
+1 / 3 = 0
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2628.961000[ms]
+1 / 4 = 0
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2561.513000[ms]
+1 / 5 = 0
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2736.525000[ms]
+1 / 6 = 0
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2707.152000[ms]
+2 / 1 = 2
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[2],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2534.747000[ms]
+2 / 2 = 1
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[1],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2553.220000[ms]
+2 / 3 = 0
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2555.849000[ms]
+2 / 4 = 0
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2561.282000[ms]
+2 / 5 = 0
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2581.999000[ms]
+2 / 6 = 0
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2661.290000[ms]
+3 / 1 = 3
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[3],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2532.371000[ms]
+3 / 2 = 1
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[1],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2528.200000[ms]
+3 / 3 = 1
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[1],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2673.878000[ms]
+3 / 4 = 0
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2585.413000[ms]
+3 / 5 = 0
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2662.971000[ms]
+3 / 6 = 0
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2556.753000[ms]
+4 / 1 = 4
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[4],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2525.547000[ms]
+4 / 2 = 2
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[2],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2539.446000[ms]
+4 / 3 = 1
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[1],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2634.290000[ms]
+4 / 4 = 1
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[1],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2549.802000[ms]
+4 / 5 = 0
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2711.888000[ms]
+4 / 6 = 0
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2547.010000[ms]
+5 / 1 = 5
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[5],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2526.313000[ms]
+5 / 2 = 2
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[2],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2539.155000[ms]
+5 / 3 = 1
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[1],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2544.969000[ms]
+5 / 4 = 1
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[1],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2528.436000[ms]
+5 / 5 = 1
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[1],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2550.597000[ms]
+5 / 6 = 0
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2565.501000[ms]
+6 / 1 = 6
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[6],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2561.803000[ms]
+6 / 2 = 3
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[3],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2717.154000[ms]
+6 / 3 = 2
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[2],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2738.889000[ms]
+6 / 4 = 1
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[1],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2607.473000[ms]
+6 / 5 = 1
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[1],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2546.631000[ms]
+6 / 6 = 1
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[1],[0],[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 2545.294000[ms]
