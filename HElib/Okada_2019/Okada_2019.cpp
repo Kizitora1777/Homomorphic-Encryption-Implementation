@@ -5,8 +5,8 @@ using namespace std;
 using ll = long long;
 
 // (p = 7, m = 12351), (p = 17, m = 14351)
-const unsigned long p = 7;
-unsigned long m = 12351;
+const unsigned long p = 17;
+unsigned long m = 14351;
 unsigned long r = 1;
 unsigned long bits = 500;
 unsigned long c = 2;
@@ -19,7 +19,7 @@ vector<helib::Ctxt> Pows(helib::Ctxt c) {
 	int l = log2(p);
 	vector<helib::Ctxt> c_pows;
 
-	// c_powsをp個分の配列にresizeする
+	// c_powsをp-1個分の配列にresizeする
 	for (int i = 0; i < p - 1; ++i) c_pows.push_back(c);
 
 	// c^1からc^l-1までを計算する
