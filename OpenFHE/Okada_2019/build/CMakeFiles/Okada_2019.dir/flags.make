@@ -6,5 +6,5 @@ CXX_FLAGS =  -Wall -Werror -O3  -DOPENFHE_VERSION=0.9.2 -Wno-parentheses -DMATHB
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/local/include/openfhe -I/usr/local/include/openfhe/third-party/include -I/usr/local/include/openfhe/core -I/usr/local/include/openfhe/pke 
+CXX_INCLUDES = -I/home/kizitora/openfhe_install/include/openfhe -I/home/kizitora/openfhe_install/include/openfhe/third-party/include -I/home/kizitora/openfhe_install/include/openfhe/core -I/home/kizitora/openfhe_install/include/openfhe/pke 
 

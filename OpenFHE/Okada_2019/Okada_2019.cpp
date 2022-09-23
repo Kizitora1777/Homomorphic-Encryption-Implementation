@@ -7,13 +7,16 @@ using ll = long long;
 
 CryptoContext<DCRTPoly> cryptoContext;
 KeyPair<DCRTPoly> keyPair;
-const int p = 17;
+
+const int p = 97;
+const int m = 4;
+
 // Okada, 2019, p.9 より、Pows関数の深さはlog2(p-1)となる
 // 加えて、Div関数でも準同型乗算を行うので、深さを1つ加える
-const int multiplicative_depth = log2(p - 1) + 1;
+const int multiplicative_depth = ceil(log2(p - 1)) + 1;
 
-vector<vector<Ciphertext<DCRTPoly>>> EncryptedConstDivCoefficients;
-vector<vector<Ciphertext<DCRTPoly>>> EncryptedConstEqCoefficients;
+vector<vector<Plaintext>> PlaintextConstDivCoefficients;
+vector<vector<Plaintext>> PlaintextConstEqCoefficients;
 
 // lagrange_interpolation関数で使われる
 ll modpow(ll x, ll n, const ll mod) {
@@ -115,13 +118,12 @@ void PrecomupteConstDivCoefficient() {
 	}
 
 	for(int d = 0; d < p; ++d) {
-		vector<Ciphertext<DCRTPoly>> EncryptedConstDivCoefficients_d;
+		vector<Plaintext> PlaintextConstDivCoefficients_d;
 		for(int x = 0; x < p; ++x) {
 				Plaintext p_temp = cryptoContext->MakePackedPlaintext(vector<int64_t>(1, ConstDivCoefficients[d][x]));
-    			Ciphertext<DCRTPoly> c_temp = cryptoContext->Encrypt(keyPair.publicKey, p_temp);
-				EncryptedConstDivCoefficients_d.push_back(c_temp);
+				PlaintextConstDivCoefficients_d.push_back(p_temp);
 			}
-		EncryptedConstDivCoefficients.push_back(EncryptedConstDivCoefficients_d);
+		PlaintextConstDivCoefficients.push_back(PlaintextConstDivCoefficients_d);
 	}
 }
 
@@ -129,6 +131,7 @@ void PrecomupteConstDivCoefficient() {
 // d in Z_p について計算する。
 void PrecomupteConstEqCoefficient() {
 	vector<vector<ll>> ConstEqCoefficients(p, vector<ll>(p));
+
 	for(int d = 1; d < p; ++d) {
 		vector<ll> data_x(p);
 		vector<ll> data_y(p);
@@ -143,13 +146,12 @@ void PrecomupteConstEqCoefficient() {
 	}
 
 	for(int d = 0; d < p; ++d) {
-		vector<Ciphertext<DCRTPoly>> EncryptedConstEqCoefficients_d;
+		vector<Plaintext> PlaintextConstEqCoefficients_d;
 		for(int x = 0; x < p; ++x) {
 				Plaintext p_temp = cryptoContext->MakePackedPlaintext(vector<int64_t>(1, ConstEqCoefficients[d][x]));
-    			Ciphertext<DCRTPoly> c_temp = cryptoContext->Encrypt(keyPair.publicKey, p_temp);
-				EncryptedConstEqCoefficients_d.push_back(c_temp);
+				PlaintextConstEqCoefficients_d.push_back(p_temp);
 			}
-		EncryptedConstEqCoefficients.push_back(EncryptedConstEqCoefficients_d);
+		PlaintextConstEqCoefficients.push_back(PlaintextConstEqCoefficients_d);
 	}
 }
 
@@ -191,11 +193,11 @@ Ciphertext<DCRTPoly> ConstDiv(vector<Ciphertext<DCRTPoly>> C_pow, int divisor) {
 	for(int i = 0; i < p; ++i) {
 		// x^0 = 1のため、定数のみ加算する
 		if(i == 0) {
-			C_div_result = cryptoContext->EvalAdd(C_div_result, EncryptedConstDivCoefficients[divisor][i]);
+			C_div_result = cryptoContext->EvalAdd(C_div_result, PlaintextConstDivCoefficients[divisor][i]);
 			continue;
 		}
 
-		Ciphertext<DCRTPoly> temp = cryptoContext->EvalMult(C_pow[i - 1], EncryptedConstDivCoefficients[divisor][i]);
+		Ciphertext<DCRTPoly> temp = cryptoContext->EvalMult(C_pow[i - 1], PlaintextConstDivCoefficients[divisor][i]);
 		C_div_result = cryptoContext->EvalAdd(C_div_result, temp);
 	}
 
@@ -210,11 +212,11 @@ Ciphertext<DCRTPoly> ConstEq(vector<Ciphertext<DCRTPoly>> C_pow, int divisor) {
 	for(int i = 0; i < p; ++i) {
 		// x^0 = 1のため、定数のみ加算する
 		if(i == 0) {
-			C_div_result = cryptoContext->EvalAdd(C_div_result, EncryptedConstEqCoefficients[divisor][i]);
+			C_div_result = cryptoContext->EvalAdd(C_div_result, PlaintextConstEqCoefficients[divisor][i]);
 			continue;
 		}
 
-		Ciphertext<DCRTPoly> temp = cryptoContext->EvalMult(C_pow[i - 1], EncryptedConstEqCoefficients[divisor][i]);
+		Ciphertext<DCRTPoly> temp = cryptoContext->EvalMult(C_pow[i - 1], PlaintextConstEqCoefficients[divisor][i]);
 		C_div_result = cryptoContext->EvalAdd(C_div_result, temp);
 	}
 
@@ -225,7 +227,6 @@ Ciphertext<DCRTPoly> Div(Ciphertext<DCRTPoly> C_a, Ciphertext<DCRTPoly> C_d) {
 	// C_sum = C_0 を作成する
 	Plaintext p_sum = cryptoContext->MakePackedPlaintext(vector<int64_t>(1, 0));
     Ciphertext<DCRTPoly> C_sum = cryptoContext->Encrypt(keyPair.publicKey, p_sum);
-
 	// 各暗号文のべき乗列を計算する
 	vector<Ciphertext<DCRTPoly>> C_a_pow = Pows(C_a);
 	vector<Ciphertext<DCRTPoly>> C_d_pow = Pows(C_d);
@@ -257,28 +258,24 @@ int main(int argc, char *argv[]) {
     
     // 各種パラメータの設定
     CCParams<CryptoContextBGVRNS> parameters;
+    parameters.SetSecurityLevel(HEStd_NotSet);
     parameters.SetMultiplicativeDepth(multiplicative_depth);
     parameters.SetPlaintextModulus(p);
-    parameters.SetSecurityLevel(HEStd_NotSet);
-    parameters.SetStandardDeviation(3.2);
-    parameters.SetKeySwitchTechnique(BV);
-    parameters.SetDigitSize(1);
-    parameters.SetRingDim(8);
+    parameters.SetRingDim(m);
     parameters.SetScalingTechnique(FIXEDAUTO);
 
     // 使用する機能の設定
     cryptoContext = GenCryptoContext(parameters);
     cryptoContext->Enable(PKE);
-    cryptoContext->Enable(KEYSWITCH);
     cryptoContext->Enable(LEVELEDSHE);
-    cryptoContext->Enable(ADVANCEDSHE);
 
     // 鍵
     keyPair = cryptoContext->KeyGen(); // 秘密鍵・公開鍵を作成する。
     cryptoContext->EvalMultKeyGen(keyPair.secretKey); // 準同型乗算を行う際に使用する鍵を作成する。
     
     // 平文
-    int64_t a = *argv[1] - '0', d = *argv[2] - '0';
+    string s_a = argv[1], s_d = argv[2];
+	int64_t a = stoi(s_a), d = stoi(s_d);
 	Plaintext plaintext_a = cryptoContext->MakePackedPlaintext(vector<int64_t>(1, a));
 	Plaintext plaintext_d = cryptoContext->MakePackedPlaintext(vector<int64_t>(1, d));
 
@@ -294,14 +291,15 @@ int main(int argc, char *argv[]) {
     start = chrono::system_clock::now();
 
 	Ciphertext<DCRTPoly> C_div_result = Div(cihpertext_a, cihpertext_d);
-	
-	end = chrono::system_clock::now();
-	double time = static_cast<double>(chrono::duration_cast<chrono::microseconds>(end - start).count() / 1000.0);
 
+	end = chrono::system_clock::now();
+
+	// 復号
 	Plaintext div_result;
     cryptoContext->Decrypt(keyPair.secretKey, C_div_result, &div_result);
 
     cout << div_result << endl;
 
+	double time = static_cast<double>(chrono::duration_cast<chrono::microseconds>(end - start).count() / 1000.0);
 	printf("time %lf[ms]\n", time);
 }

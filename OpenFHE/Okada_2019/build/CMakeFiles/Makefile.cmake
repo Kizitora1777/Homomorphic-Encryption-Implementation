@@ -7,13 +7,12 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+  "/home/kizitora/github_repository/openfhe-development/build/OpenFHEConfig.cmake"
+  "/home/kizitora/github_repository/openfhe-development/build/OpenFHEConfigVersion.cmake"
+  "/home/kizitora/github_repository/openfhe-development/build/OpenFHETargets.cmake"
   "../CMakeLists.txt"
   "CMakeFiles/3.16.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeSystem.cmake"
-  "/usr/local/lib/OpenFHE/OpenFHEConfig.cmake"
-  "/usr/local/lib/OpenFHE/OpenFHEConfigVersion.cmake"
-  "/usr/local/lib/OpenFHE/OpenFHETargets-release.cmake"
-  "/usr/local/lib/OpenFHE/OpenFHETargets.cmake"
   "/usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
   "/usr/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake"

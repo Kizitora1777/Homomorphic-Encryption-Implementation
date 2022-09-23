@@ -1,0 +1,300 @@
+79 / 60
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[1],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 313.093000[ms]
+95 / 52
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[1],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 315.305000[ms]
+22 / 36
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 313.577000[ms]
+24 / 91
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 312.876000[ms]
+54 / 6
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[9],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 314.511000[ms]
+91 / 91
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[1],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 312.906000[ms]
+1 / 71
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 313.964000[ms]
+32 / 39
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 312.606000[ms]
+37 / 25
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[1],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 318.422000[ms]
+57 / 67
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 315.927000[ms]
+30 / 82
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 313.522000[ms]
+48 / 65
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 313.202000[ms]
+51 / 43
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[1],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 313.368000[ms]
+55 / 88
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 315.908000[ms]
+5 / 33
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 313.003000[ms]
+74 / 81
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 316.528000[ms]
+53 / 12
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[4],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 318.349000[ms]
+1 / 28
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 313.893000[ms]
+0 / 77
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 309.471000[ms]
+45 / 81
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 314.645000[ms]
+88 / 61
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[1],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 318.396000[ms]
+60 / 73
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 315.971000[ms]
+27 / 31
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 317.399000[ms]
+44 / 53
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 314.723000[ms]
+38 / 95
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 318.884000[ms]
+40 / 13
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[3],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 316.343000[ms]
+62 / 88
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 317.259000[ms]
+30 / 35
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 314.529000[ms]
+61 / 50
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[1],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 317.296000[ms]
+0 / 5
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 312.005000[ms]
+87 / 4
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[21],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 316.041000[ms]
+6 / 9
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 315.423000[ms]
+87 / 33
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[2],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 316.317000[ms]
+6 / 9
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 316.694000[ms]
+13 / 28
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 316.799000[ms]
+46 / 30
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[1],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 315.056000[ms]
+55 / 39
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[1],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 317.091000[ms]
+35 / 57
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 315.449000[ms]
+9 / 74
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 314.613000[ms]
+17 / 85
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 315.579000[ms]
+58 / 56
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[1],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 318.382000[ms]
+26 / 73
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 314.539000[ms]
+18 / 42
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 313.417000[ms]
+56 / 94
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 320.298000[ms]
+20 / 67
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 319.066000[ms]
+48 / 53
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 320.176000[ms]
+7 / 85
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 316.761000[ms]
+25 / 54
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 318.853000[ms]
+73 / 60
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[1],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 319.245000[ms]
+93 / 16
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[5],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 315.198000[ms]
+53 / 54
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 316.372000[ms]
+82 / 22
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[3],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 314.824000[ms]
+3 / 33
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 318.648000[ms]
+2 / 69
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 315.643000[ms]
+31 / 40
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 315.194000[ms]
+17 / 60
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 317.960000[ms]
+52 / 84
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 316.360000[ms]
+85 / 23
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[3],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 315.459000[ms]
+15 / 85
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 319.566000[ms]
+60 / 60
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[1],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 314.022000[ms]
+27 / 64
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 312.977000[ms]
+32 / 8
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[4],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 313.598000[ms]
+71 / 1
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[71],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 319.516000[ms]
+0 / 25
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 314.961000[ms]
+54 / 43
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[1],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 318.425000[ms]
+62 / 51
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[1],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 316.862000[ms]
+62 / 41
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[1],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 315.703000[ms]
+42 / 51
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 318.704000[ms]
+60 / 88
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 316.273000[ms]
+54 / 4
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[13],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 316.917000[ms]
+52 / 19
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[2],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 315.048000[ms]
+83 / 2
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[41],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 314.507000[ms]
+61 / 51
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[1],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 316.595000[ms]
+40 / 63
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 314.211000[ms]
+27 / 43
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 315.042000[ms]
+93 / 30
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[3],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 315.773000[ms]
+84 / 42
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[2],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 318.510000[ms]
+43 / 14
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[3],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 318.671000[ms]
+55 / 73
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 314.358000[ms]
+50 / 77
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 317.537000[ms]
+77 / 85
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 317.328000[ms]
+45 / 81
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 317.165000[ms]
+59 / 2
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[29],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 314.177000[ms]
+2 / 66
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 313.126000[ms]
+53 / 68
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 314.198000[ms]
+96 / 24
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[4],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 314.759000[ms]
+59 / 64
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 320.080000[ms]
+55 / 77
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 319.162000[ms]
+90 / 50
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[1],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 322.327000[ms]
+27 / 84
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 316.625000[ms]
+75 / 69
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[1],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 317.293000[ms]
+96 / 14
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[6],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 318.035000[ms]
+92 / 87
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[1],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 320.219000[ms]
+83 / 7
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[11],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 318.572000[ms]
+96 / 60
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[1],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 314.827000[ms]
+20 / 74
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 316.797000[ms]
+52 / 56
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 319.486000[ms]
+39 / 52
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[0],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 317.003000[ms]
+51 / 46
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[1],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 318.995000[ms]
+75 / 40
+{"HElibVersion":"2.2.0","content":{"scheme":"BGV","slots":[[1],[0]]},"serializationVersion":"0.0.1","type":"Ptxt"}
+time 314.287000[ms]

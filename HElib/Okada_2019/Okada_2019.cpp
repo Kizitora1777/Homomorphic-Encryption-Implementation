@@ -4,12 +4,11 @@
 using namespace std;
 using ll = long long;
 
-// (p = 7, m = 12351), (p = 17, m = 14351)
-const unsigned long p = 17;
-unsigned long m = 14351;
-unsigned long r = 1;
-unsigned long bits = 500;
-unsigned long c = 2;
+double time_measurement = 0;
+
+const unsigned long p = 97;
+const unsigned long m = 4;
+
 
 vector<vector<ll>> ConstDivCoefficients(p, vector<ll>(p));
 vector<vector<ll>> ConstEqCoefficients(p, vector<ll>(p));
@@ -208,9 +207,17 @@ helib::Ctxt Div(helib::Ctxt C_a, helib::Ctxt C_d, const helib::Context& context,
 	helib::Ctxt C_sum(pk);
 	pk.Encrypt(C_sum, P_sum);
 
+	// 時間計測
+	//chrono::system_clock::time_point start, end;
+    //start = chrono::system_clock::now();
+
 	// 各暗号文のべき乗列を計算する
 	vector<helib::Ctxt> C_a_pow = Pows(C_a);
 	vector<helib::Ctxt> C_d_pow = Pows(C_d);
+
+	//end = chrono::system_clock::now();
+	//time_measurement = static_cast<double>(chrono::duration_cast<chrono::microseconds>(end - start).count() / 1000.0);
+
 
 	for(int i = 1; i < p; ++i) {
 		// C_a/i の準同型演算の結果を返す
@@ -240,11 +247,8 @@ int main(int argc, char *argv[]) {
 
     // セットアップ
 	helib::Context context = helib::ContextBuilder<helib::BGV>()
-		.m(m)
 		.p(p)
-		.r(r)
-		.bits(bits)
-		.c(c)
+		.m(m)
 		.build();
 
     // 秘密鍵
@@ -257,7 +261,8 @@ int main(int argc, char *argv[]) {
 	const helib::EncryptedArray& ea = context.getEA();
 
     // 平文
-    int a = *argv[1] - '0', d = *argv[2] - '0';
+    string s_a = argv[1], s_d = argv[2];
+	int a = stoi(s_a), d = stoi(s_d);
 	helib::Ptxt<helib::BGV> plaintext_a(context, vector<int>(1, a));
 	helib::Ptxt<helib::BGV> plaintext_d(context, vector<int>(1, d));
 
@@ -278,11 +283,11 @@ int main(int argc, char *argv[]) {
 
 	end = chrono::system_clock::now();
 
-	double time = static_cast<double>(chrono::duration_cast<chrono::microseconds>(end - start).count() / 1000.0);
+	time_measurement = static_cast<double>(chrono::duration_cast<chrono::microseconds>(end - start).count() / 1000.0);
 
 	// 復号
 	helib::Ptxt<helib::BGV> result(context);
 	secret_key.Decrypt(result, cihpertext_div_a_d);
 	cout << result << endl;
-	printf("time %lf[ms]\n", time);
+	printf("time %lf[ms]\n", time_measurement);
 }

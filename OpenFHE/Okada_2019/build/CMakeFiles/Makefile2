@@ -44,10 +44,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kizitora/soruce_code/openfhe_codes/Okada_2019
+CMAKE_SOURCE_DIR = /home/kizitora/source_code/time_measurement/openfhe
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kizitora/soruce_code/openfhe_codes/Okada_2019/build
+CMAKE_BINARY_DIR = /home/kizitora/source_code/time_measurement/openfhe/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -74,14 +74,14 @@ clean: CMakeFiles/Okada_2019.dir/clean
 CMakeFiles/Okada_2019.dir/all:
 	$(MAKE) -f CMakeFiles/Okada_2019.dir/build.make CMakeFiles/Okada_2019.dir/depend
 	$(MAKE) -f CMakeFiles/Okada_2019.dir/build.make CMakeFiles/Okada_2019.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kizitora/soruce_code/openfhe_codes/Okada_2019/build/CMakeFiles --progress-num=1,2 "Built target Okada_2019"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kizitora/source_code/time_measurement/openfhe/build/CMakeFiles --progress-num=1,2 "Built target Okada_2019"
 .PHONY : CMakeFiles/Okada_2019.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Okada_2019.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kizitora/soruce_code/openfhe_codes/Okada_2019/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kizitora/source_code/time_measurement/openfhe/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Okada_2019.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kizitora/soruce_code/openfhe_codes/Okada_2019/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kizitora/source_code/time_measurement/openfhe/build/CMakeFiles 0
 .PHONY : CMakeFiles/Okada_2019.dir/rule
 
 # Convenience name for target.

@@ -1,1 +1,0 @@
-/usr/bin/c++  -std=c++17 -O3  -rdynamic CMakeFiles/Okada_2019.dir/Okada_2019.o  -o Okada_2019   -L/home/kizitora/helib_install/helib_pack/lib  -Wl,-rpath,/home/kizitora/helib_install/helib_pack/lib /home/kizitora/helib_install/helib_pack/lib/libhelib.a /home/kizitora/helib_install/helib_pack/lib/libntl.so /home/kizitora/helib_install/helib_pack/lib/libgmp.so -lpthread 
