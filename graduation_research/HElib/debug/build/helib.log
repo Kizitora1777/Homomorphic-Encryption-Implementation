@@ -13,3 +13,10 @@
 [ 20:45:12 ] WARNING: CKKS encode: error exceeds bound
 [ 20:48:15 ] WARNING: CKKS encode: error exceeds bound
 [ 20:54:25 ] WARNING: CKKS encode: error exceeds bound
+[ 17:33:06 ] WARNING: Ctxt::bringToSet called with capacity=-5.546594, likely decryption error
+[ 17:33:06 ] WARNING: Ctxt::bringToSet called with capacity=-7.459302, likely decryption error
+[ 17:33:06 ] WARNING: Ctxt::bringToSet called with capacity=-6.405853, likely decryption error
+[ 17:44:58 ] WARNING: Ctxt::bringToSet called with capacity=-11.462582, likely decryption error
+[ 17:44:58 ] WARNING: Ctxt::bringToSet called with capacity=-10.159698, likely decryption error
+[ 17:44:58 ] WARNING: Ctxt::bringToSet called with capacity=-11.887685, likely decryption error
+[ 17:44:58 ] WARNING: Ctxt::bringToSet called with capacity=-10.584800, likely decryption error

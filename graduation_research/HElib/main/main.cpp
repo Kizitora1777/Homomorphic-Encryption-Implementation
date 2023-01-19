@@ -7,10 +7,10 @@ using namespace helib;
 
 // パラメータ関係
 const int B_range = 2; // [-B^B_range, B^B_range]
-const int ckks_m = 131072;
-const int ckks_bits = 1445;
-const int ckks_precision = 30;
-const int ckks_c = 8;
+const int ckks_m = 65536;//131072
+const int ckks_bits = 613;//1445
+const int ckks_precision = 40;//30
+const int ckks_c = 3;//8
 
 // 多項式で使用するデータ点
 const int N = 9;
@@ -29,21 +29,19 @@ const int B = pow(2, B_range);
 // 指数関数 y = exp(x) の範囲[-1, 1]をラグランジュ補間した多項式の係数
 // 左からx^0, x^1, ..., x^p と続く
 // 係数値が小さいため、小数点3桁分を使用し残りは切り捨てる
-const double exp_lagrange_coefficients[] = {1, 0.999,  0.500, 0.167, 0.0505, 0.0113, -0.0312, -0.00325, 0.0227};
+//const double exp_lagrange_coefficients[] = {1, 0.999,  0.500, 0.167, 0.0505, 0.0113, -0.0312, -0.00325, 0.0227};
 
 // 参考：全桁
-//const double exp_lagrange_coefficients[] = {1,           0.99949524,  0.50095556, 0.16737778, 0.05057778, 
-//										 0.01137778, -0.03128889, -0.00325079, 0.02275556};
+const double exp_lagrange_coefficients[] = {1, 0.99949524,  0.50095556, 0.16737778, 0.05057778, 0.01137778, -0.03128889, -0.00325079, 0.02275556};
 
 
 // 逆関数 y = 1/x の範囲[1, a]をラグランジュ補間した係数
 // 左からx^0, x^1, ..., x^p と続く
 // 小数点3桁までを使用し残りは切り捨てる
-const double inverse_lagrange_coefficients[] = {2.659, -2.811, 1.589, -0.538, 0.114, -1.549e-2, 1.287e-3, -5.995e-5, 1.198e-6};
+//const double inverse_lagrange_coefficients[] = {2.659, -2.811, 1.589, -0.538, 0.114, -1.549e-2, 1.287e-3, -5.995e-5, 1.198e-6};
 
 // 参考：全桁
-//const double inverse_lagrange_coefficients[] = {2.65967021,   -2.81125582,     1.58988512,    -0.538805990, 0.114775235, 
-//											-1.54970593e-2, 1.28706134e-3, -5.99599246e-5,  1.19861852e-6};
+const double inverse_lagrange_coefficients[] = {2.65967021,   -2.81125582,     1.58988512,    -0.538805990, 0.114775235, -1.54970593e-2, 1.28706134e-3, -5.99599246e-5,  1.19861852e-6};
 
 // input : c
 // output: c_pows = { c^1, c^2, ..., c^{p-1} } 
@@ -172,7 +170,7 @@ int main(int argc, char *argv[]) {
 	}
 
 	Context context = ContextBuilder<CKKS>()
-	// m: cyclotomic index
+	// m: cyclotomic index (2のべき乗)
 	// mを増加させるほど...
 	//   メリット　：セキュリティとslotが増加する
 	//   デメリット：パフォーマンスの低下し、暗号文のサイズが増加する

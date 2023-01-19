@@ -6,11 +6,11 @@ using namespace helib;
 
 
 // パラメータ関係
-const int B_range = 2; // [-B^B_range, B^B_range]
-const int ckks_m = 131072;
-const int ckks_bits = 1445;
-const int ckks_precision = 30;
-const int ckks_c = 8;
+const int B_range = 4; // [-B^B_range, B^B_range]
+const int ckks_m = 65536;// 131072
+const int ckks_bits = 613;// 1445
+const int ckks_precision = 40;// 40
+const int ckks_c = 3; // 8
 
 // 多項式で使用するデータ点
 const int N = 9;
@@ -29,21 +29,19 @@ const int B = pow(2, B_range);
 // 指数関数 y = exp(x) の範囲[-1, 1]をラグランジュ補間した多項式の係数
 // 左からx^0, x^1, ..., x^p と続く
 // 係数値が小さいため、小数点3桁分を使用し残りは切り捨てる
-const double exp_lagrange_coefficients[] = {1, 0.999,  0.500, 0.167, 0.0505, 0.0113, -0.0312, -0.00325, 0.0227};
+//const double exp_lagrange_coefficients[] = {1, 0.999,  0.500, 0.167, 0.0505, 0.0113, -0.0312, -0.00325, 0.0227};
 
 // 参考：全桁
-//const double exp_lagrange_coefficients[] = {1,           0.99949524,  0.50095556, 0.16737778, 0.05057778, 
-//										 0.01137778, -0.03128889, -0.00325079, 0.02275556};
+const double exp_lagrange_coefficients[] = {1, 0.99949524,  0.50095556, 0.16737778, 0.05057778, 0.01137778, -0.03128889, -0.00325079, 0.02275556};
 
 
 // 逆関数 y = 1/x の範囲[1, a]をラグランジュ補間した係数
 // 左からx^0, x^1, ..., x^p と続く
 // 小数点3桁までを使用し残りは切り捨てる
-const double inverse_lagrange_coefficients[] = {2.659, -2.811, 1.589, -0.538, 0.114, -1.549e-2, 1.287e-3, -5.995e-5, 1.198e-6};
+//const double inverse_lagrange_coefficients[] = {2.659, -2.811, 1.589, -0.538, 0.114, -1.549e-2, 1.287e-3, -5.995e-5, 1.198e-6};
 
 // 参考：全桁
-//const double inverse_lagrange_coefficients[] = {2.65967021,   -2.81125582,     1.58988512,    -0.538805990, 0.114775235, 
-//											-1.54970593e-2, 1.28706134e-3, -5.99599246e-5,  1.19861852e-6};
+const double inverse_lagrange_coefficients[] = {2.65967021,   -2.81125582,     1.58988512,    -0.538805990, 0.114775235, -1.54970593e-2, 1.28706134e-3, -5.99599246e-5,  1.19861852e-6};
 
 // input : c
 // output: c_pows = { c^1, c^2, ..., c^{p-1} } 
@@ -164,7 +162,7 @@ helib::Ctxt HE_inverse(helib::Ctxt x, const helib::Context& context, const helib
 	vector<helib::Ctxt> C_pows = Pows(x);
 
 	// powsの確認
-	
+	/*
 	for(int i = 0; i < P; ++i) {
 		PtxtArray P_inverse_exp_x(context);
 		P_inverse_exp_x.decrypt(C_pows[i], sk);
@@ -172,7 +170,7 @@ helib::Ctxt HE_inverse(helib::Ctxt x, const helib::Context& context, const helib
 		P_inverse_exp_x.store(sigmoid_vaue);
 		cout << "x^" << i + 1 << ": " << sigmoid_vaue[0] << endl;
 	}
-	
+	*/
 
 	// ラグランジュ補間で求めた多項式を算出する
 	for(int i = 0; i < N; ++i) {
@@ -250,30 +248,32 @@ int main(int argc, char *argv[]) {
 
 	// シグモイド関数 y = 1 / (1 + exp(-x)) の算出
 	// ！注意！：x は [-B, B]の範囲内のみ(ここから外れるとexpを計算できない)
-
+	
 	cout << "C_x.capacity=" << C_x.capacity() << " ";
     cout << "C_x.errorBound=" << C_x.errorBound() << "\n";
-
+	
 	// exp(-x)
 	helib::Ctxt C_exp_x = HE_exp(C_x, context, publicKey);
-
+	/*
 	cout << "C_exp_x.capacity=" << C_exp_x.capacity() << " ";
     cout << "C_exp_x.errorBound=" << C_exp_x.errorBound() << "\n";
-
+	*/
 	// 1 + exp(-x)
 	C_exp_x += 1.0;
 
 	// print 1 + exp(-x)
-	
+	/*
 	PtxtArray pp(context);
 	pp.decrypt(C_exp_x, secretKey);
 	vector<double> vv;
 	pp.store(vv);
 	cout << "C_exp_x + 1 value=" << vv[0] << endl;
-	
+	*/
 
+	
 	cout << "C_exp_x + 1.capacity=" << C_exp_x.capacity() << " ";
     cout << "C_exp_x + 1.errorBound=" << C_exp_x.errorBound() << "\n";
+	
 
 	// C_exp_xを一度復号してノイズを取り除き、その後再び暗号化する
 	
@@ -283,12 +283,12 @@ int main(int argc, char *argv[]) {
 	P_re_exp_x.encrypt(C_re_exp_x);
 	
 	// 1 / (1 + exp(-x))
-	//helib::Ctxt C_inverse_exp_x = HE_inverse(C_re_exp_x, context, publicKey, secretKey);
-	helib::Ctxt C_inverse_exp_x = HE_inverse(C_exp_x, context, publicKey, secretKey);
-
+	helib::Ctxt C_inverse_exp_x = HE_inverse(C_re_exp_x, context, publicKey, secretKey);
+	//helib::Ctxt C_inverse_exp_x = HE_inverse(C_exp_x, context, publicKey, secretKey);
+	
 	cout << "C_inverse_exp_x.capacity=" << C_inverse_exp_x.capacity() << " ";
     cout << "C_inverse_exp_x.errorBound=" << C_inverse_exp_x.errorBound() << "\n";
-
+	
 	end = chrono::system_clock::now();
 	double time_measurement = static_cast<double>(chrono::duration_cast<chrono::microseconds>(end - start).count() / 1000.0);
 
